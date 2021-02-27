@@ -630,6 +630,11 @@ float:right;
   height:auto;
   max-width:250px;
 }
+@media (max-width: 600px) {
+  #kontakt img{
+    max-width: 90%;
+  }
+}
 
 /* Footer */
 .footer-basic {
