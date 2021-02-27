@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: calc(100vh - 80px);
-  background: url("C:/Users/danie/Desktop/hallelujahMMXVI/Bootstrap/my/img/Hero.jpg") center center;
+  background: url("my/img/Hero.jpg") center center;
   background-size: cover;
   background-position: 58% 40%;
   position: relative;
