@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: calc(100vh - 80px);
-  background: url("my/img/Hero.jpg") center center;
+  background: url("https://github.com/danielschx/danielschx.github.io/blob/main/my/img/Hero.jpg") center center;
   background-size: cover;
   background-position: 58% 40%;
   position: relative;
@@ -356,7 +356,7 @@ section {
 #shop{
   width: 100%;
   height: calc(35vh);
-  background: url("my/img/shop-header.jpg") center center;
+  background: url("https://github.com/danielschx/danielschx.github.io/blob/main/my/img/shop-header.jpg") center center;
   background-size: cover;
   background-position: center;;
   position: relative;
