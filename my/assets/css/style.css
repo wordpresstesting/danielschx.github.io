@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Arapey", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #595f55;
+}
+
+a:hover {
+  color: #595f55;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Arapey", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #f2f2f2;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+  box-shadow: 0px 2px 15px rgba(36, 50, 93, 0.06);
+}
+
+#header .logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#header .logo a {
+  color: #24325d;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul {
+  display: flex;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+  padding: 5px 0 5px 28px;
+}
+
+.nav-menu a {
+  display: block;
+  position: relative;
+  color: #8a9086;
+  transition: 0.3s;
+  font-size: 22px;
+  font-weight: 575;
+  font-family: "Arapey", sans-serif;
+  text-transform:  uppercase;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  color: #595f55;
+}
+
+@media (max-width: 1366px) {
+  .nav-menu .drop-down .drop-down ul {
+    left: -90%;
+  }
+  .nav-menu .drop-down .drop-down:hover > ul {
+    left: -100%;
+  }
+  .nav-menu .drop-down .drop-down > a:after {
+    content: "\ea9d";
+  }
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 8px;
+  top: 8px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  color: #595f55;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  z-index: 9999;
+  overflow-y: auto;
+  background: #f2f2f2;
+  transition: ease-in-out 0.2s;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav a {
+  display: block;
+  position: relative;
+  color: #8a9086;
+  padding: 10px 20px;
+  font-weight: 500;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+  color: #595f55;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(22, 30, 56, 0.6);
+  overflow: hidden;
+  display: none;
+  transition: ease-in-out 0.2s;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+  opacity: 1;
+  visibility: visible;
+  margin:0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #f2f2f2;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  right: 15px;
+  bottom: 15px;
+  background: #8a9086;
+  color: #f2f2f2;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.back-to-top:hover {
+  color: #f2f2f2;
+  background: #8a9086;
+  transition: background 0.2s ease-in-out;
+}
+#hero {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: url("C:/Users/danie/Desktop/hallelujahMMXVI/Bootstrap/my/img/Hero.jpg") center center;
+  background-size: cover;
+  background-position: 58% 40%;
+  position: relative;
+  margin-top: 80px;
+  padding: 0;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  z-index: 2;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #f2f2f2;
+  text-transform: uppercase;
+}
+
+#hero h2 {
+  color: #f2f2f2;
+  margin-bottom: 35px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+#hero .btn-get-started {
+  font-family: "Arapey", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#hero .btn-get-started:hover {
+  border-color: #f2f2f2;
+  background: #8a9086;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero {
+    margin-top: 45px;
+    height: calc(100vh - 45px);
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Vision*/
+
+#vision {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  list-style: none;
+  text-align: center;
+  background: #f2f2f2;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 8px 20px;
+}
+
+section {
+  padding: 60px 0;
+  
+}
+.section-title {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.section-title h2 {
+  padding-top: 35px;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  color: #21413c;
+}
+.section-title ul{
+  padding: 35px;
+  padding-left:60px;
+  margin-bottom: 0;
+  list-style-type: "#   ";
+  background-color: #fff;
+}
+.section-title ul li {
+  margin-bottom: 0;
+  line-height: 1.2;
+  text-align: justify;
+}
+@media (max-width: 992px) {
+  #vision {
+    margin-top:0px;
+  }
+  .section-title h2
+  {
+    padding-top: 10px;
+  }
+  .section-title ul{
+    padding: 20px;
+    padding-left:40px;
+  }
+}
+
+/* Shop*/
+
+#shop{
+  width: 100%;
+  height: calc(35vh);
+  background: url("C:/Users/danie/Desktop/hallelujahMMXVI/Bootstrap/my/img/shop-header.jpg") center center;
+  background-size: cover;
+  background-position: center;;
+  position: relative;
+  margin:0;
+  padding: 0;
+}
+
+#shop:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#shop .section-title{
+  align-content: center;
+  padding:0;
+}
+#shop h2{
+  position:center;
+width:28%;
+font-family: "Arapey", sans-serif;
+font-style:normal;
+font-size:55px;
+font-weight: 700;
+color: #fff;
+border: 0.5px solid rgba(255,255,255,0.9);
+border-right: none;
+border-left: none;
+margin:0;
+margin-left:36%;
+padding:0;
+}
+.polaroids {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: calc(5vh);
+}
+
+.polaroid {
+  display: inline-block;
+  margin:25px;
+  position: relative;
+  width: auto;
+  border: 1px solid rgba(0,0,0,0.09);
+}
+
+.polaroid img {
+  border: 12px solid #fff;
+  border-bottom: 70px solid #fff;
+  -webkit-box-shadow: 3px 3px 5px #888;
+  -moz-box-shadow: 3px 3px 5px #888;
+  box-shadow: 3px 3px 10px #888;
+  height: auto;
+  max-width: 250px;
+}
+
+.polaroid p {
+  margin-left: 25%;
+  background-color: black;
+  margin-top:0;
+  color: #FFF;
+  font: 100 18px/22px "Arapey", sans-serif;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width:50%;
+}
+
+#shop-content .btn-get-started {
+  margin-top: 30px;
+  font-family: "Arapey", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 5px 45px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #9f9f9f;
+  box-shadow: 3px 3px 8px 3px #888;
+  margin-bottom: calc(15vh);
+}
+
+#shop-content .btn-get-started:hover {
+  border-color: #f2f2f2;
+  background: #62665f;
+}
+
+/* Über uns*/
+
+#ueberuns{
+  background-color: #9f9f9f;
+}
+#ueberuns h2{
+width:24%;
+font-family: "Arapey", sans-serif;
+font-style:normal;
+font-size:35px;
+font-weight: 500;
+letter-spacing: 4px;
+color: #fff;
+border: 0.8px solid rgba(116,116,116,0.9);
+border-right: none;
+border-left: none;
+margin:0;
+margin-left:43%;
+padding:5px 15px;
+}
+#ueberuns .content{
+
+}
+@media (max-width: 1025px) {
+  #ueberuns h2
+  {
+    width:32%;
+    margin-left:34%;
+  }
+}
+@media (max-width: 768px) {
+  #ueberuns h2
+  {
+    font-size: 35px;
+    width:50%;
+    margin-left:25%;
+  }
+}
+@media (max-width: 500px) {
+  #ueberuns h2
+  {
+    font-size: 30px;
+    width:60%;
+    margin-left:20%;
+  }
+}
