@@ -356,7 +356,7 @@ section {
 #shop{
   width: 100%;
   height: calc(35vh);
-  background: url("C:/Users/danie/Desktop/hallelujahMMXVI/Bootstrap/my/img/shop-header.jpg") center center;
+  background: url("my/img/shop-header.jpg") center center;
   background-size: cover;
   background-position: center;;
   position: relative;
